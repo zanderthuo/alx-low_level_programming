@@ -1,6 +1,22 @@
 #include "main.h"
 
-char *_memcpy(char *dest __attribute__((unused)), char *src __attribute__((unused)), unsigned int n __attribute__((unused)))
+/**
+ * *_memcpy -  copies memory area from src to dest
+ * @dest: destination
+ * @src: source
+ * @n: max bytes to use
+ * Return: dest
+ */
+
+
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	return (0);
+	unsigned int i;
+
+	for (i = 0; n > 0 ; i++, n--)
+	{
+		dest[i] = src[i];
+	}
+
+	return (dest);
 }

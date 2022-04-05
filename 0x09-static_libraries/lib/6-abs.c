@@ -1,6 +1,14 @@
 #include "main.h"
 
-int _abs(int n __attribute__((unused)))
+/**
+ * _abs - return abs value
+ * @n : number to check
+ * Return:0 or 1
+ */
+
+int _abs(int n)
 {
-	return (0);
+
+return (n >= 0 ? n : n * -1);
+
 }
